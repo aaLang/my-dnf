@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+	<p id="pp">我是一个p段落</p>
+	<button onclick="rep()">点击替换"段落"</button>
+</body>
+</html>
+<script>
+	function rep(){
+		var pp = $("pp").innerHTML;
+		var kk= pp.replace('段落','文本');
+		$("pp").innerHtml = kk;
+	}
+	function $(id){
+		return document.getElementById(id);
+	}
+</script>
